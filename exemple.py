@@ -1,9 +1,10 @@
-# app.py, run with 'streamlit run app.py'
+import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv("C:/Users/zaome/Documents/Alisson/Flask/database_clean.csv")  # read a CSV file inside the 'data" folder next to 'app.py'
-# df = pd.read_excel(...)  # will work for Excel files
+st.title("Hello world!")
 
-st.title("Hello world!")  # add a title
-st.write(df)  # visualize my dataframe in the Streamlit app
+uploaded_file = st.file_uploader("Choose a file")
+if uploaded_file is not None:
+  df = pd.read_csv("C:/Users/zaome/Documents/Alisson/Flask/database_clean.csv")
+  st.write(df)
