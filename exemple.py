@@ -9,8 +9,8 @@ if uploaded_file is not None:
   df = pd.read_csv(uploaded_file, sep="|")
   st.write(df)
 
-  
-fig, ax = plt.subplots()
+# Add some matplotlib code !
+  fig, ax = plt.subplots()
   df.hist(
     bins=8,
     column="Age",
