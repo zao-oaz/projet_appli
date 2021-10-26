@@ -9,4 +9,7 @@ if uploaded_file is not None:
   df = pd.read_csv(uploaded_file, sep="|")
   st.write(df)
 
-
+df.isnull().sum().plot(kind='hist', figsize=(12,7), color="orange")
+plt.title('Distribution of NaNs')
+plt.xlabel('NaNs')
+plt.show()
