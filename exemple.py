@@ -1,6 +1,9 @@
 import pandas as pd
 import streamlit as st
-import matplotlib.pyplot as plt
+
+import matplotlib
+@st.cache(hash_funcs={matplotlib.figure.Figure: lambda _: None})
+def mk_figure
 
 st.title("Hello world!")
 
