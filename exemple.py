@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title("Hello world!")
 
 uploaded_file = st.file_uploader("Choose a file")
