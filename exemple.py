@@ -1,8 +1,5 @@
 import pandas as pd
 import streamlit as st
-from matplotlib import figure
-from matplotlib.backends.backend_agg import RendererAgg
-_lock = RendererAgg.lock
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title("Hello world!")
