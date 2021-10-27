@@ -10,7 +10,7 @@ uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
   df = pd.read_csv(uploaded_file, sep="|")
   st.write(df)
-  
+
 #Visualisations
 fig, ax = plt.subplots()
 df.hist(
@@ -18,7 +18,7 @@ df.hist(
   column="salt_100g",
   grid=False,
   figsize=(7, 7),
-  color="#Orange",
+  color="Orange",
   zorder=2,
   rwidth=0.9,
   ax=ax,
