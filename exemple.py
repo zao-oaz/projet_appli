@@ -13,7 +13,8 @@ if uploaded_file is not None:
 
 #Selections
 option = st.selectbox(
-  ('Sélectionner vos critères alimentaires', 'Sucre', 'Sel', 'Fibres', 'Proteines'))
+  'Sélectionner vos critères alimentaires'
+  ('Sucre', 'Sel', 'Fibres', 'Proteines'))
 st.write()  
 
 txt = st.text_area('Le sel', ''' 4g de sel sont nécessaires au bon fonctionnement de l'organisme : transmission des 
