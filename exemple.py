@@ -18,7 +18,7 @@ option = st.selectbox(
 st.write('You selected:', option)  
 
 #Nustriscore_grade
-st.header('✅ Répartition des Nustriscore_grade')
+st.header('📊 Répartition des Nustriscore_grade')
 fig0 = px.histogram(df, x="nutriscore_grade",hover_data = df.columns)
 st.plotly_chart(fig0)
 
