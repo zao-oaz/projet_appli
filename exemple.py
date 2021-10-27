@@ -12,6 +12,7 @@ if uploaded_file is not None:
   st.write(df)
 
 #Visualisations
+st.header('Répartition du sucre')
 fig, ax = plt.subplots()
 df.hist(
   bins=8,
