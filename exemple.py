@@ -13,7 +13,7 @@ if uploaded_file is not None:
 
 #Selections
 option = st.selectbox(
-  'Sélectionner vos critères alimentaires'
+  'Sélectionner vos critères alimentaires',
   ('Sucre', 'Sel', 'Fibres', 'Proteines'))
 
 st.write('You selected:', option)  
