@@ -34,7 +34,7 @@ st.write(fig)
 st.header('Répartition du sucre')
 fig, ax = plt.subplots()
 df.hist(
-  column="sugar_100g",
+  column="sugars_100g",
   grid=False,
   figsize=(5, 5),
   color="Orange",
