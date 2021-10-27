@@ -18,7 +18,7 @@ option = st.selectbox(
 
 st.write('You selected:', option)  
   
-#Visualisations
+#Visualisations1
 st.header('Répartition du sucre')
 fig, ax = plt.subplots()
 df.hist(
@@ -27,7 +27,6 @@ df.hist(
   grid=False,
   figsize=(5, 5),
   color="Orange",
-  rwidth=0.9,
   ax=ax,
 )
 st.write(fig)
