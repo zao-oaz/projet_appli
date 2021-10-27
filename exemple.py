@@ -15,10 +15,10 @@ if uploaded_file is not None:
 fig, ax = plt.subplots()
 df.hist(
   bins=8,
-  column="Age",
+  column="salt_100g",
   grid=False,
-  figsize=(8, 8),
-  color="#86bf91",
+  figsize=(7, 7),
+  color="#oranges",
   zorder=2,
   rwidth=0.9,
   ax=ax,
