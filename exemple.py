@@ -43,7 +43,7 @@ df.hist(
 st.write(fig)
 
 #Visualisations3
-st.header('Répartition du sucre')
+st.header('Répartition des proteines')
 fig, ax = plt.subplots()
 df.hist(
   column="proteins_100g",
@@ -55,7 +55,7 @@ df.hist(
 st.write(fig)
 
 #Visualisations4
-st.header('Répartition du sucre')
+st.header('Répartition des fibres')
 fig, ax = plt.subplots()
 df.hist(
   column="fiber_100g",
