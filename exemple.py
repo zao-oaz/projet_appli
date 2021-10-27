@@ -14,7 +14,7 @@ if uploaded_file is not None:
 #
 option = st.selectbox(
   'How would you like to be contacted?',
-  ('Sucre', 'Sel'))
+  ('Sucre', 'Sel', 'Fibres', 'Proteines))
 
 st.write('You selected:', option)  
   
@@ -23,6 +23,42 @@ st.header('Répartition du sucre')
 fig, ax = plt.subplots()
 df.hist(
   column="salt_100g",
+  grid=False,
+  figsize=(5, 5),
+  color="Orange",
+  ax=ax,
+)
+st.write(fig)
+
+#Visualisations2
+st.header('Répartition du sucre')
+fig, ax = plt.subplots()
+df.hist(
+  column="sugar_100g",
+  grid=False,
+  figsize=(5, 5),
+  color="Orange",
+  ax=ax,
+)
+st.write(fig)
+
+#Visualisations3
+st.header('Répartition du sucre')
+fig, ax = plt.subplots()
+df.hist(
+  column="proteins_100g",
+  grid=False,
+  figsize=(5, 5),
+  color="Orange",
+  ax=ax,
+)
+st.write(fig)
+
+#Visualisations4
+st.header('Répartition du sucre')
+fig, ax = plt.subplots()
+df.hist(
+  column="fiber_100g",
   grid=False,
   figsize=(5, 5),
   color="Orange",
