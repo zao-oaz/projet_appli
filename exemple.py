@@ -85,6 +85,6 @@ df.hist(
 )
 st.write(fig)
 
-
-fig = px.scatter(df, x="fat_100g", y="sugars_100g")
-st.plotly_scatter(fig)
+#
+fig1 = px.scatter(df, x="fat_100g", y="sugars_100g")
+st.plotly_scatter(fig1)
