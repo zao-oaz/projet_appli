@@ -16,7 +16,7 @@ option = st.selectbox(
   'How would you like to be contacted?',
   ('Sucre', 'Sel'))
 
- st.write('You selected:', option)  
+st.write('You selected:', option)  
   
 #Visualisations
 st.header('Répartition du sucre')
