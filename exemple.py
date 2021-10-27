@@ -27,7 +27,6 @@ df.hist(
   grid=False,
   figsize=(5, 5),
   color="Orange",
-  zorder=2,
   rwidth=0.9,
   ax=ax,
 )
