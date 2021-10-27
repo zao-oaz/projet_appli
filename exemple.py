@@ -18,11 +18,10 @@ option = st.selectbox(
 
 st.write('You selected:', option)  
 
-txt = st.text_area('''
-...     4g de sel sont nécessaires au bon fonctionnement de l'organisme : transmission des signaux nerveux, contraction musculaire et 
-...     fonctionnement des reins en assurant une bonne hydratation. Le sel gouverne, avec le potassium, tout l'équilibre hydrique de l'organisme. (...)
-...     ''')
-st.write()
+txt = st.text_area('Le sel', '''
+4g de sel sont nécessaires au bon fonctionnement de l'organisme : transmission des signaux nerveux, contraction musculaire et 
+fonctionnement des reins en assurant une bonne hydratation. Le sel gouverne, avec le potassium, tout l'équilibre hydrique de l'organisme. (...) ''')
+st.write((txt)
 
 #Visualisations1
 st.header('Répartition du sel')
