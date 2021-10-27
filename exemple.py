@@ -14,7 +14,7 @@ if uploaded_file is not None:
 #
 option = st.selectbox(
   'How would you like to be contacted?',
-  ('Sucre', 'Sel', 'Fibres', 'Proteines))
+  ('Sucre', 'Sel', 'Fibres', 'Proteines'))
 
 st.write('You selected:', option)  
   
