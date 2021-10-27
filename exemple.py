@@ -85,7 +85,7 @@ df.hist(
 )
 st.write(fig)
 
-st.title("💪🏼 L'énergie nutritionnelle")
+st.title("L'énergie nutritionnelle 💪🏼")
 
 #1
 st.header('⚡ Energie dans le sel')
