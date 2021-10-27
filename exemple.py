@@ -87,4 +87,4 @@ st.write(fig)
 
 #
 fig1 = px.scatter(df, x="fat_100g", y="sugars_100g")
-st.plotly_scatter(fig1)
+st.plotly_chart(fig1)
