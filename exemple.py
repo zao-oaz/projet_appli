@@ -68,6 +68,8 @@ df.hist(
 )
 st.write(fig)
 
+st.title("L'énergie nutritionnelle")
+
 #text4
 txt = st.text_area('🔎 Les fibres', '''Les bienfaits de ces dernières sont attestés dans la prévention de l'obésité, du diabète, du cholestérol et des pathologies induites, mais aussi dans la 
 prévention du cancer du côlon.''')
@@ -85,8 +87,22 @@ df.hist(
 )
 st.write(fig)
 
-st.header('Energie')
-fig1 = px.scatter(df, x="energy-kcal_100g", y="sugars_100g")
+#1
+st.header('Energie dans le sel')
+fig1 = px.scatter(df, x="energy-kcal_100g", y="salt_100g")
 st.plotly_chart(fig1)
 
+#2
+st.header('Energie dans le sucre')
+fig2 = px.scatter(df, x="energy-kcal_100g", y="sugars_100g")
+st.plotly_chart(fig2)
 
+#3
+st.header('Energie dans les protéines')
+fig3 = px.scatter(df, x="energy-kcal_100g", y="proteins_100g")
+st.plotly_chart(fig3)
+
+#4
+st.header('Energie dans les fibres')
+fig4 = px.scatter(df, x="energy-kcal_100g", y="fiber_100g")
+st.plotly_chart(fig4)
