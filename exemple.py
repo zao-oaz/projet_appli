@@ -86,5 +86,18 @@ df.hist(
 st.write(fig)
 
 #
-fig1 = px.scatter(df, x="fat_100g", y="sugars_100g")
+fig1 = px.scatter(df, x="energy-kcal_100g", y="sugars_100g")
 st.plotly_chart(fig1)
+
+#
+fig2 = px.scatter(df, x="energy-kcal_100g", y="fat_100g")
+st.plotly_chart(fig2)
+
+#
+fig3 = px.scatter(df, x="energy-kcal_100g", y="proteins_100g")
+st.plotly_chart(fig3)
+
+#
+fig4 = px.scatter(df, x="energy-kcal_100g", y="fiber_100g")
+st.plotly_chart(fig4)
+
