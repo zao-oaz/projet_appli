@@ -17,6 +17,10 @@ option = st.selectbox(
   ('Sucre', 'Sel', 'Fibres', 'Proteines'))
 st.write('You selected:', option)  
 
+#Nustriscore_grade
+fig0 = px.histogram(df, x="nutriscore_grade",hover_data = df.columns)
+st.plotly_chart(fig0)
+
 #text1
 txt = st.text_area('🔎 Le sel', ''' 4g de sel sont nécessaires au bon fonctionnement de l'organisme : transmission des 
 signaux nerveux, contraction musculaire et fonctionnement des reins en assurant une bonne hydratation. Le sel gouverne, avec le potassium, tout l'équilibre hydrique de l'organisme.''')
