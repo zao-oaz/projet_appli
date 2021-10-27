@@ -69,7 +69,7 @@ df.hist(
 st.write(fig)
 
 #text4
-txt = st.text_area('Les protéines', '''Les bienfaits de ces dernières sont attestés dans la prévention de l'obésité, du diabète, du cholestérol et des pathologies induites, mais aussi dans la 
+txt = st.text_area('Les fibres', '''Les bienfaits de ces dernières sont attestés dans la prévention de l'obésité, du diabète, du cholestérol et des pathologies induites, mais aussi dans la 
 prévention du cancer du côlon.''')
 st.write()
 
