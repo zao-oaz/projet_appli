@@ -4,7 +4,7 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
-st.title("Bienvenue sur Nutri-Sport !")
+st.title("Bienvenue sur Nutri-Sport ! 🥇")
 
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
