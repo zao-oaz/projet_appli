@@ -11,5 +11,6 @@ if uploaded_file is not None:
   df = pd.read_csv(uploaded_file, sep="|")
   st.write(df)
  
-fig = px.scatter(df, x="fat_100g", y="sugars_100g")
-st.plotly(fig)
+fig, ax = plt.subplots()
+sns.lineplot(x='x', y='y', data=df, ax=ax)
+st.pyplot(fig)
