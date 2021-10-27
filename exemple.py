@@ -85,11 +85,11 @@ df.hist(
 )
 st.write(fig)
 
-#
+st.header('Energie')
 fig1 = px.scatter(df, x="energy-kcal_100g", y="sugars_100g")
 st.plotly_chart(fig1)
 
-#
+st.header('Energie')
 fig2 = px.scatter(df, x="energy-kcal_100g", y="fat_100g")
 st.plotly_chart(fig2)
 
