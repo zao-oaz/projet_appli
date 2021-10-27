@@ -15,9 +15,9 @@ if uploaded_file is not None:
 option = st.selectbox(
   'Sélectionner vos critères alimentaires',
   ('Sucre', 'Sel', 'Fibres', 'Proteines'))
-
 st.write('You selected:', option)  
 
+#text1
 txt = st.text_area('Le sel', ''' 4g de sel sont nécessaires au bon fonctionnement de l'organisme : transmission des 
 signaux nerveux, contraction musculaire et fonctionnement des reins en assurant une bonne hydratation. Le sel gouverne, avec le potassium, tout l'équilibre hydrique de l'organisme.''')
 st.write()
@@ -33,6 +33,11 @@ df.hist(
   ax=ax,
 )
 st.write(fig)
+
+#text2
+txt = st.text_area('Le sel', ''' Récemment, l'OMS (Organisation mondiale de la santé) a revu à la baisse ses préconisations 
+sur le sucre qui doit constituer, selon ses conseils, 5 % des apports énergétiques quotidiens, c'est-à-dire, l'équivalent de 25 grammes par jour, soit six cuillères à café pour une ration de 2.000 calories.''')
+st.write()
 
 #Visualisations2
 st.header('Répartition du sucre')
