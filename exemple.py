@@ -22,7 +22,6 @@ st.write('You selected:', option)
 st.header('Répartition du sucre')
 fig, ax = plt.subplots()
 df.hist(
-  bins=7,
   column="salt_100g",
   grid=False,
   figsize=(5, 5),
