@@ -11,6 +11,13 @@ if uploaded_file is not None:
   df = pd.read_csv(uploaded_file, sep="|")
   st.write(df)
 
+#
+option = st.selectbox(
+  'How would you like to be contacted?',
+  ('Sucre', 'Sel'))
+
+ st.write('You selected:', option)  
+  
 #Visualisations
 st.header('Répartition du sucre')
 fig, ax = plt.subplots()
