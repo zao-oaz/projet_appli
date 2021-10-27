@@ -18,7 +18,7 @@ df.hist(
   column="salt_100g",
   grid=False,
   figsize=(7, 7),
-  color="#oranges",
+  color="#Orange",
   zorder=2,
   rwidth=0.9,
   ax=ax,
