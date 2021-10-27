@@ -11,6 +11,12 @@ if uploaded_file is not None:
   df = pd.read_csv(uploaded_file, sep="|")
   st.write(df)
  
-fig, ax = plt.subplots()
-sns.lineplot(x='x', y='y', data=df, ax=ax)
-st.pyplot(fig)
+@st.cache
+def random_data():
+	return random.sample(range(100), 50), random.sample(range(100), 50)
+
+st.subheader("Plotly interactive scatterplot")
+x, y = random_data()
+fig = px.scatter(x=x, y=y, title="My fancy plot")
+v = st_scatterplot(fig)
+st.write(v)
