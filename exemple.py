@@ -11,7 +11,7 @@ if uploaded_file is not None:
   df = pd.read_csv(uploaded_file, sep="|")
   st.write(df)
  
-@st.cache(hash_funcs={matplotlib.figure.Figure: lambda _: None})
+@st.cache()
 def plot():
     arr = np.random.normal(1, 1, size=100)
     fig, ax = plt.subplots()
@@ -20,8 +20,3 @@ def plot():
     return fig
 
 st.write(plot())
-arr = np.random.normal(1, 1, size=100)
-fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
-
-st.pyplot(fig)
