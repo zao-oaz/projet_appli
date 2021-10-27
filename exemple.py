@@ -6,19 +6,19 @@ import matplotlib.pyplot as plt
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title("Bienvenue sur notre appli Nutri-Sport !")
 
-uploaded_file = st.file_uploader("Choisi ton csv")
+uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
-  df = pd.read_csv(uploaded_file, sep="|")
+  df = pd.read_csv(uploaded_file)
   st.write(df)
- 
+  
 #Visualisations
 fig, ax = plt.subplots()
 df.hist(
   bins=8,
-  column="salt_100g",
+  column="Age",
   grid=False,
-  figsize=(7, 7),
-  color="Orange",
+  figsize=(8, 8),
+  color="#86bf91",
   zorder=2,
   rwidth=0.9,
   ax=ax,
