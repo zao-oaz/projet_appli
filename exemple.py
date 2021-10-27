@@ -11,12 +11,5 @@ if uploaded_file is not None:
   df = pd.read_csv(uploaded_file, sep="|")
   st.write(df)
  
-@st.cache()
-def plot():
-    arr = np.random.normal(1, 1, size=100)
-    fig, ax = plt.subplots()
-    ax.hist(arr, bins=20)
-    
-    return fig
-
-st.write(plot())
+fig = px.scatter(df, x="fat_100g", y="sugars_100g")
+st.plotly(fig)
