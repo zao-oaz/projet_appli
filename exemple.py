@@ -11,12 +11,16 @@ if uploaded_file is not None:
   df = pd.read_csv(uploaded_file, sep="|")
   st.write(df)
  
-@st.cache
-def random_data():
-	return random.sample(range(100), 50), random.sample(range(100), 50)
 
-st.subheader("Plotly interactive scatterplot")
-x, y = random_data()
-fig = px.scatter(x=x, y=y, title="My fancy plot")
-v = st_scatterplot(fig)
-st.write(v)
+fig, ax = plt.subplots()
+  df.hist(
+    bins=8,
+    column="salt_100g",
+    grid=False,
+    figsize=(8, 8),
+    color="#86bf91",
+    zorder=2,
+    rwidth=0.9,
+    ax=ax,
+  )
+  st.write(fig)
