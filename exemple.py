@@ -19,7 +19,7 @@ option = st.selectbox(
 st.write('You selected:', option)  
   
 #Visualisations1
-st.header('Répartition du sucre')
+st.header('Répartition du sel')
 fig, ax = plt.subplots()
 df.hist(
   column="salt_100g",
